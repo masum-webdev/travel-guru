@@ -11,7 +11,7 @@ const Place = () => {
 
     const places = fakeData.find(item => item.id === id);
     const { name, details } = places;
-    let [loggedInUser, setLoggedInUser,placeName,setPlaceName]=useContext(UserContext);
+    let [loggedInUser, setLoggedInUser, placeName, setPlaceName] = useContext(UserContext);
     setPlaceName(name);
     const handleLoginRoute = () => {
 

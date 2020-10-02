@@ -11,13 +11,12 @@ const HotelsInfo = (props) => {
             <div className="info">
                 <h5>{name}</h5>
                 <p>
-                    4 guest, 2 rooms, 2 beds,{" "}
-                    2 bathrooms
+                    4 guest, 2 rooms, 2 beds, 2 bathrooms
 				</p>
                 <p>With Air conditioning Kitchen</p>
                 <p>Cancellation flexibility available</p>
                 <p className="ratings d-flex">
-                    <img style={{width:'20px' ,height:'20px'}} src={star} alt=""/>;
+                    <img style={{ width: '20px', height: '20px' }} src={star} alt="" />;
                     <small>
                         <strong>
                             {rating}
@@ -25,7 +24,6 @@ const HotelsInfo = (props) => {
                     </small>
                     &nbsp; &nbsp;
                     <strong>${price}</strong>  &nbsp; &nbsp;
-                    <del>$99 discount</del>
                 </p>
             </div>
         </div>
