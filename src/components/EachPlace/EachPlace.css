@@ -1,0 +1,12 @@
+.place {
+	position: relative;
+}
+
+.place h3 {
+	font-size: 36px;
+	line-height: 43px;
+	color: #fff;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+}
