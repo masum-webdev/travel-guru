@@ -4,13 +4,13 @@ import fakeData from '../../fakeData';
 import HotelsInfo from '../HotelsInfo/HotelsInfo';
 
 const Details = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const [loggedInUser, setLoggedInUser,placeName,setPlaceName] = useContext(UserContext)
     const hotel = fakeData.slice(3, 6);
     return (
         <div className="tg-destination container">
             <div className="section-top text-left pt-3">
-                <h4>252 stays Apr 13-17 3 guests</h4>
-                <h3>{loggedInUser.name} Stay in Cox's Bazar </h3>
+                <p>252 stays Apr 13-17 3 guests</p>
+                <h3>{loggedInUser.name} Stay in {placeName} </h3>
             </div>
             <div className="row">
                 <div className="col-lg-7">

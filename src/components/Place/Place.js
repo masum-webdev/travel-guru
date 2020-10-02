@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import fakeData from '../../fakeData';
 import './Place.css'
+import { UserContext } from '../../App';
 const Place = () => {
 
     const history = useHistory();
@@ -10,14 +11,12 @@ const Place = () => {
 
     const places = fakeData.find(item => item.id === id);
     const { name, details } = places;
-
+    let [loggedInUser, setLoggedInUser,placeName,setPlaceName]=useContext(UserContext);
+    setPlaceName(name);
     const handleLoginRoute = () => {
 
         history.push("/details");
     };
-
-
-
     return (
 
 

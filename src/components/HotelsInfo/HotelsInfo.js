@@ -1,4 +1,5 @@
 import React from 'react';
+import star from '../../fakeData/resource/Icon/star_1_.png';
 
 const HotelsInfo = (props) => {
     const { image, name, price, rating } = props.hotel;
@@ -8,7 +9,7 @@ const HotelsInfo = (props) => {
                 <img src={image} alt="" style={{ maxWidth: "270px" }} />
             </div>
             <div className="info">
-                <h4>{name}</h4>
+                <h5>{name}</h5>
                 <p>
                     4 guest, 2 rooms, 2 beds,{" "}
                     2 bathrooms
@@ -16,12 +17,14 @@ const HotelsInfo = (props) => {
                 <p>With Air conditioning Kitchen</p>
                 <p>Cancellation flexibility available</p>
                 <p className="ratings d-flex">
+                    <img style={{width:'20px' ,height:'20px'}} src={star} alt=""/>;
                     <small>
                         <strong>
                             {rating}
                         </strong>
                     </small>
-                    <strong>${price}</strong>
+                    &nbsp; &nbsp;
+                    <strong>${price}</strong>  &nbsp; &nbsp;
                     <del>$99 discount</del>
                 </p>
             </div>

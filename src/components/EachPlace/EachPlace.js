@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, { useContext } from 'react';
 import './EachPlace.css'
+
+
 
 const EachPlace = (props) => {
     const { name, image, id } = props.places;
+    
     return (
         <div className="col-4">
             <Link to={`/place/${id}`}>
