@@ -8,7 +8,7 @@ const EachPlace = (props) => {
     const { name, image, id } = props.places;
     
     return (
-        <div className="col-4">
+        <div className="col-4 place">
             <Link to={`/place/${id}`}>
                 <div>
                     <img src={image} style={{ maxWidth: "100%" }} alt="" />
