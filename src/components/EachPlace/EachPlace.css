@@ -1,12 +1,13 @@
-.place {
-	position: relative;
+.place{
+	height: 300px; 
+	overflow: hidden;
+	border-radius: 10px;
+}
+.place img{
+	transition: transform .5s ease;
+	
 }
 
-.place h3 {
-	font-size: 36px;
-	line-height: 43px;
-	color: #fff;
-	position: absolute;
-	bottom: 30px;
-	left: 20px;
+.place:hover img{
+	transform: scale(1.2);
 }
